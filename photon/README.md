@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `photon` official image](https://hub.docker.com/_/photon) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,9 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.0`, `3.0-20200626`, `latest`](https://github.com/vmware/photon-docker-image/blob/d07cfdfa09d7cd7b136a2d05348596af528c6a2f/docker/Dockerfile)
--	[`1.0`, `1.0-20200424`](https://github.com/vmware/photon-docker-image/blob/7f5b8dc3b62cc2c8d20149e65a4efba9e406ffc5/docker/Dockerfile)
--	[`2.0`, `2.0-20200424`](https://github.com/vmware/photon-docker-image/blob/2750e1b68c08545e8cca639cec3ea716ef406d1d/docker/Dockerfile)
+-	[`3.0`, `3.0-20200626`, `latest`](https://github.com/vmware/photon-docker-image/blob/5c3a7e25a0b7e6a29d1ef4cc71487340e3d975af/docker/Dockerfile)
+
+[![arm64v8/photon build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/photon.svg?label=arm64v8/photon%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/photon/)
 
 # Quick reference (cont.)
 
@@ -59,7 +61,7 @@ See the [FAQ](http://vmware.github.io/photon/assets/files/photon_faqs.pdf) for m
 
 ## How to use these images
 
-Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon 1.0GA as the base of an image, specify `FROM photon:1.0GA`.
+Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon 1.0GA as the base of an image, specify `FROM arm64v8/photon:1.0GA`.
 
 ## Support
 
